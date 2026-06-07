@@ -16,8 +16,8 @@ def get_plant_advice(plant_type):
         return "No advice for this type of plant."
 
 
-season = "summer"
-plant_type = "flower"
+season = input("Enter season: ").lower()
+plant_type = input("Enter plant type: ").lower()
 
 advice = get_season_advice(season)
 advice += get_plant_advice(plant_type)
